@@ -1,4 +1,4 @@
-a=int(input())
+a=int(input());c=0
 mas=list(map(int,input().split()))
-c+=(f,for f in mas)
-print(c)
+b=sum(mas)
+print(b-a+1)
