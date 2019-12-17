@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="58b0ecd1-9c60-4f60-bc77-de094d10a4a8" name="Default Changelist" comment="noviy comit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python works/ACMP Ankorkish/0086.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python works/ACMP Ankorkish/0086.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Python.fakingClasi">
+  <component name="RunManager" selected="Python.OpaSamostoyalka">
     <configuration name="0086" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="0818" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="OpaSamostoyalka" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +104,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python works/ACMP Ankorkish" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python works/мои задумки (пусто)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python works/ACMP Ankorkish/0818.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python works/мои задумки (пусто)/OpaSamostoyalka.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OpaSamostoyalka" />
         <item itemvalue="Python.fakingClasi" />
         <item itemvalue="Python.0086" />
         <item itemvalue="Python.0331" />
         <item itemvalue="Python.0312" />
-        <item itemvalue="Python.0818" />
       </list>
     </recent_temporary>
   </component>
@@ -195,22 +194,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576222891870" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1576479589442">
+    <state width="1515" height="268" key="GridCell.Tab.0.bottom" timestamp="1576617198965">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576479589442" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1576479589442">
+    <state width="1515" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576617198965" />
+    <state width="1515" height="268" key="GridCell.Tab.0.center" timestamp="1576617198964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576479589442" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1576479589442">
+    <state width="1515" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576617198964" />
+    <state width="1515" height="268" key="GridCell.Tab.0.left" timestamp="1576617198963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576479589442" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1576479589442">
+    <state width="1515" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576617198963" />
+    <state width="1515" height="268" key="GridCell.Tab.0.right" timestamp="1576617198964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576479589442" />
+    <state width="1515" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576617198964" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1576613048985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576613048985" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1576613048985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576613048985" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1576613048985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576613048985" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1576613048985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576613048985" />
     <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1576221136372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
