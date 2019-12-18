@@ -27,36 +27,177 @@ class chans():
                     return 0.5
             else:
                 p1=input("Ви помилились при вводі, введіть ще раз ----> ")
+    def magaz(self,mon):
+        p1=random.randint(1,101)
+        p2=[0,0,0,0]
+        if 1<=p1<10:
+            p3 = [2, 2, 1]
+            print("У вас " + str(me.mon) + " монет")
+            print("Ви натрапили на ринок!")
+            print("Вибір товару :")
+            print("2 зілля хп  (ціна за штуку 40 монет)")
+            print("2 зілля атаки (ціна за штуку 60 монет)")
+            print("1 прокачака шаблі (+20% dmg)(ціна за штуку 300 монет)")
+            print("Введіть назву товару, що ви хочете взяти, щоб вийти введіть \"вийти\"")
+            while True:
+                tov=str(input())
+                if tov=="зілля хп":
+                    if mon<=40:
+                        print("Бракує грошей")
+                    elif p3[0]==0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon-=40
+                        print("Ви успішно придбали 1 зілля хп! У вас залишилося "+str(mon))
+                        p2[0]+=1
+                        p3[0]-=1
+                        continue
+                elif tov=="зілля атаки":
+                    if mon<=60:
+                        print("Бракує грошей")
+                    elif p3[1]==0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon -= 60
+                        print("Ви успішно придбали 1 зілля атаки! У вас залишилося"+str(mon))
+                        p2[1]+=1
+                        p3[1]-=1
+                        continue
+                elif tov=="прокачка шаблі":
+                    if mon<=300:
+                        print("Бракує грошей")
+                    elif p3[2]==0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon -= 300
+                        print("Ви успішно прокачали свою шаблю! У вас залишилося"+str(mon))
+                        p2[2]+=1
+                        p3[2]-=1
+                        continue
+                elif tov == "вийти":
+                    break
+                else:
+                    print("Помилка при вводі")
+            print("До зустрічі!")
+            p2[3]=mon
+            return p2
+        if 10<=p1<30:
+            p3 = [1, 2, 0]
+            print("У вас " + str(me.mon) + " монет")
+            print("Ви натрапили на дім чарівника!")
+            print("Вибір товару :")
+            print("1 зілля хп  (ціна за штуку 40 монет)")
+            print("2 зілля атаки (ціна за штуку 60 монет)")
+            print("Введіть назву товару, що ви хочете взяти, щоб вийти введіть \"вийти\"")
+            while True:
+                tov=str(input())
+                if tov=="зілля хп":
+                    if mon<=40:
+                        print("Бракує грошей")
+                    elif p3[0]==0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon-=40
+                        print("Ви успішно придбали 1 зілля хп! У вас залишилося "+str(mon))
+                        p2[0]+=1
+                        p3[0]-=1
+                        continue
+                elif tov=="зілля атаки":
+                    if mon<=60:
+                        print("Бракує грошей")
+                    elif p3[1]==0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon -= 60
+                        print("Ви успішно придбали 1 зілля атаки! У вас залишилося"+str(mon))
+                        p2[1]+=1
+                        p3[1]-=1
+                        continue
+                elif tov == "вийти":
+                    break
+                else:
+                    print("Помилка при вводі")
+            print("До зустрічі!")
+            p2[3]=mon
+            return p2
+        if 30 <= p1 <= 50:
+            p3 = [0, 0, 1]
+            print("У вас " + str(me.mon) + " монет")
+            print("Ви натрапили на дім коваля!")
+            print("Вибір товару :")
+            print("1 прокачака шаблі (+20% dmg)(ціна за штуку 200 монет)")
+            print("Введіть назву товару, що ви хочете взяти, щоб вийти введіть \"вийти\"")
+            while True:
+                tov = str(input())
+                if tov == "прокачка шаблі":
+                    if mon <= 300:
+                        print("Бракує грошей")
+                    elif p3[2] == 0:
+                        print("ви скупили весь товар цього типу")
+                    else:
+                        mon -= 300
+                        print("Ви успішно прокачали свою шаблю! У вас залишилося" + str(mon))
+                        p2[2] += 1
+                        p3[2] -= 1
+                        continue
+                elif tov == "вийти":
+                    break
+                else:
+                    print("Помилка при вводі")
+            print("До зустрічі!")
+            p2[3] = mon
+            return p2
+        else:
+            print("В дрозі ви не знайшли жодного продавця товару")
+            return [0,0,0,mon]
 class har():
     mame="Андрій"
     maxhp=100
     hp=100
     ot=8
     do=16
-    dmg="none"
-    Vubor="None"
+    dmg=1
+    Vubor=1
     zlhp=2
     zlatk=2
+    mon=15
 me=har();kk=1;num=1
 me.mame=input("Введіть своє ім'я ----->> ")
 if me.mame=="adm":
     me.ot=100
     me.do=101
 enemy=har()
-enemy.mame=input("виберіть опонента (чорт, коза, огр) -----> ")
-if enemy.mame=="коза":
-    enemy.hp=75
-    enemy.ot=3
-    enemy.do=12
-elif enemy.mame=="чорт":
-    enemy.hp=120
-    enemy.ot=10
-    enemy.do=12
-elif enemy.mame=="огр":
-    enemy.hp=200
-    enemy.ot=0
-    enemy.do=31
-    me.zlatk+=1
+while True:
+    enemy.mame=input("виберіть опонента (чорт, коза, огр, баба-яга) -----> ")
+    if enemy.mame=="коза":
+        enemy.maxhp=75
+        enemy.hp=75
+        enemy.ot=5
+        enemy.do=12
+        break
+    elif enemy.mame=="чорт":
+        enemy.hp=120
+        enemy.maxhp = 180
+        enemy.ot=10
+        enemy.do=15
+        break
+    elif enemy.mame=="огр":
+        enemy.hp=200
+        enemy.maxhp = 200
+        enemy.ot=0
+        enemy.do=20
+        me.zlatk+=1
+        break
+    elif enemy.mame=="баба-яга":
+        enemy.hp=180
+        enemy.maxhp = 180
+        enemy.ot=8
+        enemy.do=12
+        me.zlatk+=1
+        me.zlhp+=2
+        break
+    else:
+        print("Помилка при вводі, такого опонента не існує! перевірте запис і напишіть правильно!")
 ch=chans()
 chek=1
 print("Гра почалась!")
@@ -68,10 +209,6 @@ while True:
     while me.hp>0 and enemy.hp>0:
         if chek==1:
             print("У вас "+str(me.hp)+" хп! У "+enemy.mame+" "+str(enemy.hp)+" хп")
-            if me.zlatk<0:
-                me.zlatk=0
-            if me.zlhp<0:
-                me.zlhp=0
             if me.zlhp+me.zlatk>0:
                 ans=input("У вас є "+str(me.zlhp)+" зілля хп, "+str(me.zlatk)+" зілля атаки, чи хочете ви їх використати?    (так, ні) ----> ")
             if ans=="так":
@@ -87,9 +224,9 @@ while True:
                         print("Ви збільшили значення свого здоров'я на "+str(pp)+" хп!")
                         me.zlhp-=1
                 if me.zlatk!=0:
-                    ans2=input("У вас "+str(me.zlatk)+" зілля атаки, збільшити атаку на 50%? (так,ні) ----> ")
+                    ans2=input("У вас "+str(me.zlatk)+" зілля атаки, збільшити атаку на 150%? (так,ні) ----> ")
                     if ans2 == "так":
-                        kk = 1.5
+                        kk = 2.5
                         me.zlatk-=1
             me.dmg=random.randint(me.ot,me.do)
             me.Vubor=str(input("Куди атакувати "+str(enemy.mame)+"-a?     (голова, тулуб, ноги) -----> "))
@@ -107,6 +244,10 @@ while True:
                 print("Оппонент "+enemy.mame+" не знає втоми!")
             print(enemy.mame + " атакує " + me.mame + " на " + str(enemy.dmg) + " урону!")
             chek = 1
+            if enemy.maxhp-enemy.hp>120 and enemy.mame=="баба-яга":
+                rara=random.randint(1,10)
+                print(enemy.mame+" випила зілля і востаноила "+str(rara)+" хп!")
+                enemy.hp+=rara
             print("________________________________________________________________________________________________________")
     else:
         if me.hp<=0:
@@ -114,18 +255,36 @@ while True:
             sys.exit()
         else:
             print(str(enemy.mame)+" був(-ла) знищенний")
+            print( "________________________________________________________________________________________________________")
+            enemy.maxhp*=1.3
+            int(enemy.maxhp)
             enemy.hp=int(nev*1.5)
-            me.zlhp+=int(1*num)
-            me.zlatk+=int(1*num)
-            print("До складу добавлено "+str(int(1*num))+" зілля хп, та "+str(int(1*num))+" зілля атаки!")
+            enemy.ot*=1.2
+            enemy.do *= 1.2
+            enemy.ot=int(enemy.ot)
+            enemy.do=int(enemy.do)
+            me.zlhp+=int(num//2)
+            me.zlatk+=int(num//2)
+            print("До складу добавлено "+str(int(num/2))+" зілля хп, та "+str(int(num//2))+" зілля атаки!")
             num+=1
             chek=1
+            kkk=me.maxhp
             me.maxhp *= 1.2
             me.maxhp=int(me.maxhp)
+            me.hp+=me.maxhp-kkk
+            me.mon+=10*num
             print("Тепер ваше максимальне хп досягає " +str(me.maxhp))
             if num%3==0:
                 me.ot*=int(2)
                 me.do *= int(2)
                 print("Ваша атака зроса в двічі!")
-
-
+            print("Добавлено "+str(10*num)+" монет")
+            print(
+                "________________________________________________________________________________________________________")
+            pokupki=ch.magaz(me.mon)
+            me.mon = pokupki[3]
+            me.zlhp+=pokupki[0]
+            me.zlatk+=pokupki[1]
+            if pokupki[2]==1:
+                me.ot*=1.2
+                me.do*=1.2
